@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<translations>
+	<en-GB>
+		<name>Prizes</name>
+		<team>Team</team>
+		<tour>Tournament</tour>
+		<submit>Submit</submit>
+		<new>New entry</new>
+		<kind>Kind of prize</kind>
+		<g_title>Title</g_title>
+		<g_about>Description</g_about>
+		<desc><![CDATA[Welcome to the prizes section. Here you may find teams who have won prizes in tournaments for being 1st, 2nd and 3rd place and for being most lethal or fair.]]></desc>
+		<title><![CDATA[Short introduction to the prize or the winning team.]]></title>
+		<about>Details about the prize. Did the winning team/coach get something in real life?</about>
+	</en-GB>
+	<fr-FR>
+		<name>Récompenses</name>
+		<team>Equipe</team>
+		<tour>Tournoi</tour>
+		<submit>Soumettre</submit>
+		<new>Nouvelle entrée</new>
+		<kind>Type de récompense</kind>
+		<g_title>Titre</g_title>
+		<g_about>Description</g_about>
+		<desc><![CDATA[Bienvenue dans la section des récompenses. Vous pourrez trouver ici les prix reçu lors des tournois.]]></desc>
+		<title><![CDATA[Courte introduction à la récompense ou à l'équipe gagnante.]]></title>
+		<about>Détails à propos du prix.</about>
+	</fr-FR>
+</translations>

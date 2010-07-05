@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<translations>
+<en-GB>
+<name>Gallery</name>
+
+<note>Please select one of the below options.</note>
+<none>None selected</none>
+
+<players>Players from team</players>
+<stads>Team stadiums</stads>
+<coaches>Coaches</coaches>
+
+<playersof>Players of</playersof>
+
+</en-GB>
+<fr-FR>
+<name>Galerie</name>
+
+<note>Choisissezune option.</note>
+<none>Aucune</none>
+
+<players>Joueurs de l'équipe</players>
+<stads>Stades</stads>
+<coaches>Coachs</coaches>
+
+<playersof>Joueurs de</playersof>
+
+</fr-FR>
+</translations>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<translations>
+<en-GB>
+	<name>Memorable matches</name>
+	<view>View</view>
+	<desc>Which matches are worth remembering in terms of most TDs, killed and so on?</desc>
+	<filled>More than X matches have the same record or no record exists at all.</filled>
+	<!-- Most of... -->
+	<td>Most touchdowns</td>
+	<cp>Most completions</cp>
+	<intcpt>Most interceptions</intcpt>
+	<ki>Most killed</ki>
+	<cas>Most casualties</cas>
+	<svic>Largest score-difference</svic>
+	<inc>Largest team income</inc>
+	<gate>Largest gate</gate>
+	<mfans>Most RL fans/spectators</mfans>
+	<tvdiff>Largest TV difference in which underdog won</tvdiff>
+</en-GB>
+<fr-FR>
+	<name>Matchs de légende</name>
+	<view>Voir</view>
+	<desc>Les matchs les plus marquant en termes de score, sorties, etc ...</desc>
+	<filled>Plus de X matchs ont le même nombre de record.</filled>
+	<!-- Most of... -->
+	<td>Le plus de touchdowns</td>
+	<cp>Le plus de passes</cp>
+	<intcpt>Le plus d'interceptions</intcpt>
+	<ki>Le plus de tués</ki>
+	<cas>Le plus de sorties</cas>
+	<svic>La plus grande différence</svic>
+	<inc>Le plus gros revenue</inc>
+	<gate>Le plus d'entrée</gate>
+	<mfans>Le plus de fans</mfans>
+	<tvdiff>La plus large différence de TV où le plus faible a gagné</tvdiff>
+</fr-FR>
+</translations>

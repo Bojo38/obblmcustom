@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<translations>
+<en-GB>
+
+<name>Wanted</name>
+
+<player>Player</player>
+<sort_hint>Hint: clicking on the dropdown and pressing any letter on the keyboard scrolls the dropdown down to the first team name beginning with that letter.</sort_hint>
+<submit>Submit</submit>
+<new>New entry</new>
+<posted>Posted</posted>
+<edit>Edit</edit>
+<del>Delete</del>
+
+<g_title>Bounty</g_title>
+<g_about>Wanted for</g_about>
+<killed>HAS BEEN KILLED!</killed>
+<wanted>Wanted</wanted>
+
+<desc><![CDATA[Welcome to the wall of wanted players.<br>Watch out for these player, a bounty is out for each of their heads!]]></desc>
+<title><![CDATA[What is the bounty for this player's head?<br>This could be anything from raw gold to a free bonus skill for one of the players on the killing team.]]></title>
+<about>Why is the player wanted?</about>
+
+<note>Please note: Once the player has been killed it is up to a leagues commissioner (admin) to give the appropriate award.</note>
+
+</en-GB>
+<fr-FR>
+
+<name>Plus mort que vif</name>
+
+<player>Joueur</player>
+<sort_hint>Astuce: Cliquer sur la liste déroulante et appuyer sur n'importe quelle lettre du clavier pour aller à l'équipe dont la première lettre commance par la lettre pressée.</sort_hint>
+<submit>Soumettre</submit>
+<new>Nouvelle entrée</new>
+<posted>Posté</posted>
+<edit>Editer</edit>
+<del>Effacer</del>
+
+<g_title>Bounty</g_title>
+<g_about>Recherché pour</g_about>
+<killed>A ETE TUE!</killed>
+<wanted>Wanted</wanted>
+
+<desc><![CDATA[Bienvenue sur la mur des recherchés.<br>Observez ces joueur, une prime est offerte pour chacune de leur tête!]]></desc>
+<title><![CDATA[Quelle est la récompense pour la tête de ce joueur?<br>Cela peut-être n'importe quoi, de l'or ou une compétence supplémentaire.]]></title>
+<about>Pourquoi ce joueur est recherché?</about>
+
+<note>Remarque: Une fois que ce joueur a été tué, c'est aux commissaires de ligues d'offrir la récompense apropriée.</note>
+
+</fr-FR>
+</translations>
