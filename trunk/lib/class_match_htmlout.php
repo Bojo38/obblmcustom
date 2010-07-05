@@ -317,7 +317,6 @@ public static function report() {
             
                 if (!self::player_validation($p, $m))
                 {
-                    print "validation of player $p->$name failed";
                     continue;
                 }
                 
