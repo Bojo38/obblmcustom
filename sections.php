@@ -343,7 +343,7 @@ function sec_main() {
                             echo "<td style='text-align: right;'>" . $m->{"{$home}_name"} . "</td>\n";
                             echo "<td><nobr>" . $m->{"${home}_score"} . "&mdash;" . $m->{"${guest}_score"} . "</nobr></td>\n";
                             echo "<td style='text-align: left;'>" . $m->{"${guest}_name"} . "</td>\n";
-                            echo "<td><a href='index.php?section=matches&amp;type=report&amp;mid=$m->match_id'>Show</a></td>";
+                            echo "<td><a href='index.php?section=matches&amp;type=report&amp;mid=$m->match_id'>Voir</a></td>";
                             echo "</tr>";
                         }
                         ?>

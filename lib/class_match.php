@@ -380,16 +380,22 @@ class Match
                 - Set to MNG? In which case we must zero set the player's match data from match played after this match (if this match is not the latest).
         */
         $status = true;
-        
+       
+
         if ($PLAYED) { # Must be played to have a date to compare with.
             if ($input['inj'] == DEAD) {
+                print "Dead detected";
                 $query = "DELETE FROM ".$db_prefix."match_data USING ".$db_prefix."match_data INNER JOIN ".$db_prefix."matches 
                     WHERE ".$db_prefix."match_data.f_match_id = ".$db_prefix."matches.match_id AND f_player_id = $pid AND date_played > (SELECT date_played FROM ".$db_prefix."matches WHERE match_id = $mid)";
                 $status &= mysql_query($query);
 
             }
-            elseif ($input['inj'] != NONE) { # Player has MNG status.
-                global $T_PMD_ACH, $T_PMD_IR, $T_PMD_INJ;
+            elseif ($input['inj'] != NONE) { 
+                print "Injury detected";
+                # Player has MNG status.
+
+                global $T_PMD_ACH, $T_PMD_IR, $T_PMD_INJ;               
+
                 $status &= mysql_query("UPDATE ".$db_prefix."match_data SET ".
                     array_strpack('%s = 0', array_merge($T_PMD_ACH, $T_PMD_IR), ',').','.
                     array_strpack('%s = '.NONE, $T_PMD_INJ, ',')."
@@ -401,6 +407,8 @@ class Match
                         date_played > (SELECT date_played FROM ".$db_prefix."matches WHERE match_id = $mid) AND 
                         f_player_id = $pid 
                         ORDER BY date_played ASC LIMIT 1)");
+
+                mysql_error();
             }
         }
         
@@ -451,7 +459,7 @@ class Match
         if (!$IMPORT) {
             $status &= mysql_query("DELETE FROM ".$db_prefix."match_data WHERE f_player_id = $pid AND f_match_id = $mid");
         }
-        $query = 'INSERT INTO ".$db_prefix."match_data ('.implode(',', $EXPECTED).') VALUES ('.implode(',', array_values($input)).')';
+        $query = 'INSERT INTO '.$db_prefix.'match_data ('.implode(',', $EXPECTED).') VALUES ('.implode(',', array_values($input)).')';
         
         return mysql_query($query) && 
             // Extra stats, if sent.
