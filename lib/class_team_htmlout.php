@@ -51,7 +51,7 @@ public static function dispList()
         $queryGet = 'SELECT '.preg_replace('/\_RRP/', 'team_id', $fields).' FROM '.$db_prefix.'teams '.$where.' ORDER BY tname ASC';
     }
     else {
-        $q = "SELECT $fields FROM ".$db_prefix."matches, ".$db_prefix."teams, ".$db_prefix."tours, d".$db_prefix."divisions WHERE ".$db_prefix."matches._RRP = ".$db_prefix."teams.team_id AND ".$db_prefix."matches.f_tour_id = ".$db_prefix."tours.tour_id AND ".$db_prefix."tours.f_did = ".$db_prefix."divisions.did ";
+        $q = "SELECT $fields FROM ".$db_prefix."matches, ".$db_prefix."teams, ".$db_prefix."tours, ".$db_prefix."divisions WHERE ".$db_prefix."matches._RRP = ".$db_prefix."teams.team_id AND ".$db_prefix."matches.f_tour_id = ".$db_prefix."tours.tour_id AND ".$db_prefix."tours.f_did = ".$db_prefix."divisions.did ";
 	    switch ($sel_node)
 	    {
 	        case false: break;
@@ -65,7 +65,6 @@ public static function dispList()
 	    $queryCnt = "SELECT COUNT(*) FROM (($_subt1) UNION DISTINCT ($_subt2)) AS tmp";
 	    $queryGet = '('.$_subt1.') UNION DISTINCT ('.$_subt2.') ORDER BY tname ASC';
     }
-    
     $result = mysql_query($queryCnt);
     list($cnt) = mysql_fetch_row($result);
     $pages = ($cnt == 0) ? 1 : ceil($cnt/T_HTML_TEAMS_PER_PAGE);
@@ -385,19 +384,19 @@ private function _roster($ALLOW_EDIT, $DETAILED, $players)
             $x .= "<form method='POST'>\n";
             $x .= "<select name='skill'>\n";
 
-            $x .= "<optgroup label='Compétences Normales'>\n";
+            $x .= "<optgroup label='Compï¿½tences Normales'>\n";
             foreach ($p->choosable_skills['norm'] as $s) {
                 $x .= "<option value='$s'>".$skillididx[$s]."</option>\n";
             }
             $x .= "</optgroup>\n";
 
-            $x .= "<optgroup label='Compétences Doubles'>\n";
+            $x .= "<optgroup label='Compï¿½tences Doubles'>\n";
             foreach ($p->choosable_skills['doub'] as $s) {
                 $x .= "<option value='$s'>".$skillididx[$s]."</option>\n";
             }
             $x .= "</optgroup>\n";
             
-            $x .= "<optgroup label='Augmentations de caractéristiques'>\n";
+            $x .= "<optgroup label='Augmentations de caractï¿½ristiques'>\n";
             foreach ($p->choosable_skills['chr'] as $s) {
                 global $CHR_CONV;
                 $x .= "<option value='ach_$s'>+ ".ucfirst($CHR_CONV[$s])."</option>\n";
@@ -491,7 +490,7 @@ private function _roster($ALLOW_EDIT, $DETAILED, $players)
         'mv_cp'     => array('desc' => 'Pas'), 
         'mv_td'     => array('desc' => 'Tds'), 
         'mv_intcpt' => array('desc' => 'Int'), 
-        'mv_cas'    => array('desc' => ($DETAILED) ? 'Leg/Gra/Tué' : 'Sor', 'nosort' => ($DETAILED) ? true : false),
+        'mv_cas'    => array('desc' => ($DETAILED) ? 'Leg/Gra/Tuï¿½' : 'Sor', 'nosort' => ($DETAILED) ? true : false),
         'mv_mvp'    => array('desc' => 'JPV'), 
         'mv_spp'    => array('desc' => ($DETAILED) ? 'XP/Bonus' : 'XP', 'nosort' => ($DETAILED) ? true : false),
         'value'     => array('desc' => $lng->getTrn('common/value'), 'kilo' => true, 'suffix' => 'k'),  
