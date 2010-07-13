@@ -163,7 +163,7 @@
     <plugins>Plugins</plugins>
     
     <rules>Rules</rules>
-    <forum>Forum</forum>
+    <forum>Shoutbox</forum>
 </menu>
 
 <!-- Section translations -->
@@ -2112,7 +2112,7 @@
     </admin_menu>
     <plugins>Plugins</plugins>
     <rules>Regles</rules>
-    <forum>Forum</forum>
+    <forum>Boite à cris</forum>
 </menu>
 <!-- Section translations -->
 <login>

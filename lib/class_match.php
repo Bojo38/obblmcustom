@@ -472,7 +472,7 @@ class Match
     
     public static function ESentry(array $relations, array $playerData)
     {
-        global $core_tables;
+        global $core_tables,$db_prefix;
         
         // Ready the data.
         $tbl = 'match_data_es';
