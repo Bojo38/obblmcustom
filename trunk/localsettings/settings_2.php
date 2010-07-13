@@ -7,7 +7,7 @@
 /* General */
 
 $settings['league_name'] = '<center>RAW<br>Rh&ocirc;ne Alpes Webleague</center>'; // Name of the site or the league name if only one league is being managed.
-$settings['forum_url']   = 'http://www.ainpacte.org/joomla1.5/index.php?option=com_kunena&Itemid=100003&func=showcat&catid=20'; // URL of league forum, if you have such. If not then leave this empty, that is = '' (two quotes only).
+$settings['forum_url']   = 'http://www.ainpacte.org/joomla1.5/index.php?option=com_kide&view=kide'; // URL of league forum, if you have such. If not then leave this empty, that is = '' (two quotes only).
 $settings['stylesheet']  = 1;                  // Default is 1. OBBLM CSS stylesheet for non-logged in guests. Currently stylesheet 1 and 2 are the only existing stylesheets.
 $settings['lang']        = 'fr-FR';            // Default language. Existing: en-GB, es, de, fr.
 $settings['fp_links']    = true;               // Default is true. Generate coach, team and player links on the front page?
